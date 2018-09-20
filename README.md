@@ -1,2 +1,2 @@
 # probable-fiesta
-Testing github - dockerhub connection
+Docker compose file for a Civicrm + Drupal site.
