@@ -55,9 +55,9 @@ RUN a2enmod expires
 WORKDIR /var/www/html
 
 # e.g. https://www.drupal.org/node/3060/release
-ARG DRUPAL_VERSION
-ARG DRUPAL_MD5
-ARG CIVICRM_VERSION
+ARG DRUPAL_VERSION=7.59
+ARG DRUPAL_MD5=7e09c6b177345a81439fe0aa9a2d15fc
+ARG CIVICRM_VERSION=5.5.1
 
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - \
